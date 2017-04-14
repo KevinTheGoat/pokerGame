@@ -9,7 +9,7 @@ Decription: header file for program. contains libraries, constants, structs,
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*constants*/
+/*symbolic constants*/
 #define MAXSUIT 4    /*size for the number of suits*/
 #define MAXRANK 13    /*size for the number of rank*/
 #define MAXDECKSIZE (MAXRANK * MAXSUIT)    /*total number of cards in a deck*/
@@ -21,6 +21,9 @@ Decription: header file for program. contains libraries, constants, structs,
 #define TWOKIND 2 /*value for 2 cards being the same*/
 #define THREEKIND 3 /*value for 3 cards being the same*/
 #define WAYSTOWIN 9 /*total number of ways to win in poker*/
+
+/*const*/
+
 
 /*structs*/
 struct card
@@ -84,4 +87,3 @@ void showPlayerHand(struct game aGame);
 void showWinner(struct player winner[], int numberOfWinners);
 struct player sortPlayerHand(struct player aPlayer);
 void swap(struct card *deckIndex, struct card *randIndex);
-struct deck zCheatGame(struct deck cheatDeck);

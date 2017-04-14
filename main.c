@@ -18,7 +18,7 @@
     Compile: make sure header is in same directory to compile input
     gcc -pedantic -ansi -o studPoker.out  main.c cards.c player.c deck.c
     or
-    make
+    make build
 
     Run: to run input ./studPoker.out [hand size] [amount of players]
  			
@@ -80,8 +80,6 @@ int main(int argc, char *argv[])
     OGDeck = createDeck();
     printf("\nOriginal Deck\n");
     showDeck(OGDeck);
-    newGame = createGame(OGDeck, numberOfPlayers);
-    showPlayerHand(newGame);
 
     shuffledDeck = shuffle(OGDeck);
     printf("\nShuffled Deck\n");
@@ -91,12 +89,6 @@ int main(int argc, char *argv[])
     findWinner(newGame);
     printf("*****End of Game*****\n");
 
-
-    cheatDeck = zCheatGame(shuffledDeck);
-    printf("\nCheated Deck\n");
-    newGame = createGame(cheatDeck, WAYSTOWIN);
-    showPlayerHand(newGame);
-    findWinner(newGame);
     }
     else{
         printf("Invalid player size\n");

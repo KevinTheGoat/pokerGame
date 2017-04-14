@@ -215,43 +215,11 @@ purpose: prints the rank of the hand in a readable string
 ____________________________________________________________________________*/
 void showHandStrength(int handStrength)
 {
-    printf("\nRank: ");
-    if (handStrength == highCard)
-    {
-        printf("High Card");
-    }
-    else if (handStrength == onePair)
-    {
-        printf("One Pair");
-    }
-    else if (handStrength == twoPair)
-    {
-        printf("Two Pair");
-    }
-    else if (handStrength == threeOfKind)
-    {
-        printf("Three Of Kind");
-    }
-    else if (handStrength == straight)
-    {
-        printf("Straight");
-    }
-    else if (handStrength == flush)
-    {
-        printf("Flush");
-    }
-    else if (handStrength == fullHouse)
-    {
-        printf("FullHouse");
-    }
-    else if (handStrength == fourOfKind)
-    {
-        printf("FourOfKind");
-    }
-    else if (handStrength == straightFlush)
-    {
-        printf("Straight Flush");
-    }
+    const char *HAND_RANK[] = {"High Card", "One Pair", "Two Pairs", 
+                          "Three Of a Kind", "Straight", "Flush",
+                          "FullHouse","Four Of a Kind", "Straight Flush"};
+
+    printf("%s", HAND_RANK[handStrength]);                       
     printf("\n");
 }
 /*____________________________________________________________________________

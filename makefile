@@ -6,7 +6,7 @@ FILES = main.c cards.c player.c deck.c
 
 .PHONY: makefile
 
-makefile: $(FILES)
-	$(CC) -o studPoker.out $(FILES)
+build: $(FILES)
+	$(CC) -o studPoker $(FILES)
 clean:
 	rm -f *.out

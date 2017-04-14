@@ -45,77 +45,15 @@ void showCard(struct card currentCard)
 
 void showRank(int rank)
 {
+    const char *CARD_RANK[] = {"2", "3", "4", "5", "6", "7",
+                                "8","9", "T","J","Q","K","A"};
+    printf("%s", CARD_RANK[rank]);
 
-    if (rank == two)
-    {
-        printf("2");
-    }
-    else if (rank == three)
-    {
-        printf("3");
-    }
-    else if (rank == four)
-    {
-        printf("4");
-    }
-    else if (rank == five)
-    {
-        printf("5");
-    }
-    else if (rank == six)
-    {
-        printf("6");
-    }
-    else if (rank == seven)
-    {
-        printf("7");
-    }
-    else if (rank == eight)
-    {
-        printf("8");
-    }
-    else if (rank == nine)
-    {
-        printf("9");
-    }
-    else if (rank == ten)
-    {
-        printf("T");
-    }
-    else if (rank == jack)
-    {
-        printf("J");
-    }
-    else if (rank == queen)
-    {
-        printf("Q");
-    }
-    else if (rank == king)
-    {
-        printf("K");
-    }
-    else if (rank == ace)
-    {
-        printf("A");
-    }
+    return;
 }
 void showSuit(int suit)
 {
-    if (suit == spades)
-    {
-        printf("S");
-    }
-    else if (suit == hearts)
-    {
-        printf("H");
-    }
-    else if (suit == diamonds)
-    {
-        printf("D");
-    }
-    else if (suit == clubs)
-    {
-        printf("C");
-    }
+    const char *CARD_SUIT[] = {"S", "H", "D", "C"};
+    printf("%s", CARD_SUIT[suit]);
     printf(" ");
 }

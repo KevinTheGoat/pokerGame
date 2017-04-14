@@ -1,0 +1,78 @@
+Pseudo Code
+
+
+struct card createCard(int currentSuit, int currentRank)
+{
+
+create a card based on the current card
+    value function is used to created card for deck
+
+    return createdCard;
+}
+
+void showCard(card aCard)
+{
+
+	shows the current card
+}
+
+
+struct player createPlayer()
+{
+
+	creates a player from deck
+	return player
+}
+
+void findWinner(struct game aGame)
+{
+
+ 	finds the winner(s) of a poker game
+}
+
+void showPlayerHand()
+{
+
+	show the hand or cards of the players
+}
+
+struct deck shuffle( deck aDeck)
+{
+	shuffles the deck that is passed to it and reurns it back
+	shuffled
+	return aDeck
+}
+
+struct player sortPlayerHand(struct player aPlayer)
+{
+
+	sort players hand using insertion sort
+}
+
+void showWinner(struct player gameWinner[], int numberOfWinners)
+{
+
+	print out the list of winners
+}
+
+struct game createGame(struct deck aDeck, int playerAmount)
+{
+
+	creates a game from the deck 
+	return a game
+}
+
+void showDeck(struct deck showDeck)
+{
+
+	print the cards of the deck thats is passed to it
+}
+
+struct player countCards(struct player aPlayer)
+{
+
+ 	count the types of suits and ranks in players hand
+}
+
+
+

@@ -1,6 +1,6 @@
 /*============================================================================
     Source code:  main.c
-    Author:  William Feild 
+    Author:  Kevin Moreau 
     Student ID:  4804471
     Assignment:  Program #4 Stud Poker
   
